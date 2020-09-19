@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Anhzf\\LaravelRestAPI": "src/"
+            "Anhzf\\LaravelRestAPI\\": "src/"
         }
     }
 }
