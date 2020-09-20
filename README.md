@@ -1,5 +1,12 @@
 # Laravel-RestAPI
-Laravel Restful API management
+Laravel Rest API management
+
+## Table of Content
+- [Feature](#feature)
+- [Installation](#installation)
+- [JSON Data Schema](#api-response-json-data-structure)
+- [Usage](#usage)
+- [More Example](#example)
 
 ## Feature
 - Improve your API Response data structure
@@ -23,6 +30,17 @@ Laravel Restful API management
 
 ## Usage
 
+### Methods
+* [APIResponse::message()](#add-message--apiresponsemessagestring-message)
+* [APIResponse::data()](#add-data--apiresponsedataarray-data)
+* [APIResponse::statusCode()](#set-http-status-code--apiresponsestatuscodeint-statuscode)
+* [APIResponse::error()](#send-error-response--apiresponseerror)
+* [Send Shortcut](#send-response-shortcut)
+  * [APIResponse::sendMessage()](#send-response-shortcut)
+  * [APIResponse::sendData()](#send-response-shortcut)
+  * [APIResponse::sendStatusCode()](#send-response-shortcut)
+  * [APIResponse::sendError()](#send-response-shortcut)
+
 ### Add Message | ```APIResponse::message(string $message)```
 ```php
   use Anhzf\LaravelRestAPI\APIResponse;
@@ -31,7 +49,7 @@ Laravel Restful API management
   return APIResponse::message('[your message here]')->send();
 ```
 
-### Add Data | ```APIResponse::data(array $data) ```
+### Add Data | ```APIResponse::data(array $data)```
 ```php
   use Anhzf\LaravelRestAPI\APIResponse;
   
@@ -75,7 +93,7 @@ By adding ```Send``` verb in above listed method, it will be send response like 
   }
 ```
 
-#### Example
+### Example
 ```php
   use Anhzf\LaravelRestAPI\APIResponse;
   
