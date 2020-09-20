@@ -4,6 +4,19 @@ namespace Anhzf\LaravelRestAPI;
 
 use Illuminate\Http\JsonResponse;
 
+/**
+ * @method static \Illuminate\Http\JsonResponse send()
+ * @method static self message(string $message)
+ * @method static self error()
+ * @method static self data(array $data)
+ * @method static \Illuminate\Http\JsonResponse sendMessage(string $message)
+ * @method static \Illuminate\Http\JsonResponse sendError(string $message = null, int $statusCode = \Illuminate\Http\JsonResponse::HTTP_BAD_REQUEST)
+ * @method static \Illuminate\Http\JsonResponse sendData(array $data)
+ * @method static \Illuminate\Http\JsonResponse sendStatusCode(int $statusCode, bool $success = true)
+ * @method static array toArray()
+ *
+ * @see \Illuminate\Http\JsonResponse
+ */
 class APIResponse
 {
     private static $_instance = null;
